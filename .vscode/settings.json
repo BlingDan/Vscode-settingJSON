@@ -1,0 +1,137 @@
+{
+    "workbench.colorTheme": "GitHub Dark",
+    
+    //字体
+    "editor.fontFamily": "Cascadia Code, '宋体'",
+    "debug.console.fontFamily": "'Cascadia Code','宋体'",
+    // "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Light'",
+    "terminal.integrated.fontFamily": "'Cascadia Code'",
+    "editor.fontSize": 18,
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.fontSize": 16,
+    "editor.lineHeight": 1.6,
+    "editor.fontLigatures": true,
+
+    //自动保存
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+
+    //图标
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.productIconTheme": "fluent-icons",
+
+    //快捷Preference设置
+    "window.commandCenter": true,
+    "window.titleBarStyle": "custom",
+
+    //光标平滑
+    // "editor.cursorSmoothCaretAnimation": "on" ,
+    
+    //code runner
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        //运行结果放到bin目录下（先有bin目录）
+        "c": "cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+    },
+
+    //Git Length
+    "gitlens.defaultDateFormat": "YYYY-MM-DD hh:mm:ss",
+    "gitlens.defaultDateShortFormat": "YYY-MM-DD",
+
+    //cpp reference
+    "cppref.lang": "en",
+    "cppref.searchEngine": "Google",
+
+    //c/c++
+    // "C_Cpp.default.cppStandard": "c++17",
+    // "C_Cpp.default.cStandard": "c17",
+    // "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true, //auto提示类型
+    // "C_Cpp.inlayHints.parameterNames.enabled": true,    //参数提示
+    // "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false, //参数和传入一致时同样提示
+    // "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,            //下划线提示
+    // "C_Cpp.inlayHints.referenceOperator.enabled": true,                         //显示引用类型
+    // "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+    // "C_Cpp.clang_format_style": "google",
+    "git.autorefresh": false,
+    "git.enabled": false,
+    "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true,
+        "suppressGitMissingWarning": true
+    },
+
+    //cmake-tool
+    "cmake.cmakePath": "D:\\CS_Tools\\cmake-3.25.1-windows-x86_64\\bin\\cmake.exe",
+    // "cmake.buildDirectory": "${workspaceFolder}/out/${buildType}",       //文件输出在out目录下
+    "cmake.configureOnOpen": false,                                        //开始时候不提示
+    "cmake.configureOnEdit": false,                                        //写的时候别总报错
+    "cmake.generator": "Unix Makefile",                                     //默认生成器  
+
+    //vim
+    "vim.leader": "<space>",
+    // "editor.lineNumbers": "relative",
+    "vim.surround": true,
+    "vim.sneak": true,
+    "vim.useSystemClipboard": true,     //使用系统剪切板
+    "vim.hlsearch": true,               //搜索高亮
+    "vim.ignorecase": true,             //搜素忽略大小写
+    "vim.useCtrlKeys": true,            //允许vim以ctrl开头快捷键覆盖默认快捷键
+    "vim.handleKeys": {             //忽略一些快捷键
+        "<C-a>": false,
+        "<C-v>": false,
+    },
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "random": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeinfo": "cpp"
+    },
+
+
+
+
+}
