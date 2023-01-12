@@ -12,6 +12,8 @@
     "editor.lineHeight": 1.6,
     "editor.fontLigatures": true,
 
+    "window.zoomLevel": 0.2,    //侧边栏字体大小（笔记本）
+
     //自动保存
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
