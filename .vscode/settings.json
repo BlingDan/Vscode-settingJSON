@@ -4,7 +4,7 @@
     //字体
     "editor.fontFamily": "Cascadia Code, '宋体'",
     "debug.console.fontFamily": "'Cascadia Code','宋体'",
-    // "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Light'",
+    // "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.fontFamily": "'Cascadia Code'",
     "editor.fontSize": 18,
     "editor.mouseWheelZoom": true,
@@ -34,28 +34,30 @@
     "code-runner.runInTerminal": true,
     "code-runner.executorMap": {
         //运行结果放到bin目录下（先有bin目录）
-        "c": "cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
+        "c": " cd $dir && gcc $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
         "cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
     },
 
     //Git Length
     "gitlens.defaultDateFormat": "YYYY-MM-DD hh:mm:ss",
     "gitlens.defaultDateShortFormat": "YYY-MM-DD",
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
 
     //cpp reference
     "cppref.lang": "en",
     "cppref.searchEngine": "Google",
 
     //c/c++
-    // "C_Cpp.default.cppStandard": "c++17",
-    // "C_Cpp.default.cStandard": "c17",
-    // "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true, //auto提示类型
-    // "C_Cpp.inlayHints.parameterNames.enabled": true,    //参数提示
-    // "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false, //参数和传入一致时同样提示
-    // "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,            //下划线提示
-    // "C_Cpp.inlayHints.referenceOperator.enabled": true,                         //显示引用类型
-    // "C_Cpp.inlayHints.referenceOperator.showSpace": true,
-    // "C_Cpp.clang_format_style": "google",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.inlayHints.autoDeclarationTypes.enabled": true, //auto提示类型
+    "C_Cpp.inlayHints.parameterNames.enabled": true,    //参数提示
+    "C_Cpp.inlayHints.parameterNames.suppressWhenArgumentContainsName": false, //参数和传入一致时同样提示
+    "C_Cpp.inlayHints.parameterNames.hideLeadingUnderscores": false,            //下划线提示
+    "C_Cpp.inlayHints.referenceOperator.enabled": true,                         //显示引用类型
+    "C_Cpp.inlayHints.referenceOperator.showSpace": true,
+    "C_Cpp.clang_format_style": "google",
     "git.autorefresh": false,
     "git.enabled": false,
     "gitlens.advanced.messages": {
@@ -65,10 +67,10 @@
 
     //cmake-tool
     "cmake.cmakePath": "D:\\CS_Tools\\cmake-3.25.1-windows-x86_64\\bin\\cmake.exe",
-    // "cmake.buildDirectory": "${workspaceFolder}/out/${buildType}",       //文件输出在out目录下
+    "cmake.buildDirectory": "${workspaceFolder}/out/${buildType}",       //文件输出在out目录下
     "cmake.configureOnOpen": false,                                        //开始时候不提示
     "cmake.configureOnEdit": false,                                        //写的时候别总报错
-    "cmake.generator": "Unix Makefile",                                     //默认生成器  
+    "cmake.generator": "MinGW Makefiles",                                     //默认生成器  
 
     //vim
     "vim.leader": "<space>",
@@ -83,8 +85,8 @@
         "<C-a>": false,
         "<C-v>": false,
     },
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
+
+    
     "explorer.confirmDelete": false,
     "files.associations": {
         "array": "cpp",
