@@ -1,6 +1,9 @@
 {
     "workbench.colorTheme": "GitHub Dark",
     
+    //控制 Git.Sync是否出现在状态栏中
+    "git.enableStatusBarSync": true,
+
     //字体
     "editor.fontFamily": "Cascadia Code, '宋体'",
     "debug.console.fontFamily": "'Cascadia Code','宋体'",
@@ -139,3 +142,7 @@
 
 
 }
+
+//how to start Cmake fastest
+// ->> press Ctrl + shift + p and type: Cmake Quick start
+//you should type Build for cmake in the buttom then press run icon in the buttom
