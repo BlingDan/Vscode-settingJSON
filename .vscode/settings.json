@@ -41,11 +41,11 @@
         "cpp": "cd $dir && g++ $fileName -o bin\\$fileNameWithoutExt && cd bin && .\\$dir$fileNameWithoutExt",
     },
 
-    //Git Length
-    "gitlens.defaultDateFormat": "YYYY-MM-DD hh:mm:ss",
-    "gitlens.defaultDateShortFormat": "YYY-MM-DD",
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
+    // //Git Length
+    // "gitlens.defaultDateFormat": "YYYY-MM-DD hh:mm:ss",
+    // "gitlens.defaultDateShortFormat": "YYY-MM-DD",
+    // "gitlens.codeLens.authors.enabled": false,
+    // "gitlens.codeLens.recentChange.enabled": false,
 
     //cpp reference
     "cppref.lang": "en",
@@ -63,10 +63,10 @@
     "C_Cpp.clang_format_style": "google",
     "git.autorefresh": false,
     "git.enabled": false,
-    "gitlens.advanced.messages": {
-        "suppressGitDisabledWarning": true,
-        "suppressGitMissingWarning": true
-    },
+    // "gitlens.advanced.messages": {
+    //     "suppressGitDisabledWarning": true,
+    //     "suppressGitMissingWarning": true
+    // },
 
     //cmake-tool
     "cmake.cmakePath": "D:\\CS_Tools\\cmake-3.25.1-windows-x86_64\\bin\\cmake.exe",
@@ -138,9 +138,15 @@
         "typeinfo": "cpp"
     },
 
-
-
-
+    // Go 
+    "go.formatTool": "gofmt",
+    "go.lintTool": "golangci-lint",
+    // "go.lintFlags": [
+    //     "--timeout=5m"
+    // ],
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+   
 }
 
 //how to start Cmake fastest
